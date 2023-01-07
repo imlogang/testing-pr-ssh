@@ -15,11 +15,10 @@ jobs:
       - checkout
       - run: exit 0
     
-  tests-1:
+  tests-2:
     docker:
       - image: cimg/base:current
     steps:
-      - checkout
       - run: exit 0
       
 workflows:
