@@ -8,6 +8,13 @@ jobs:
       - checkout
       - run: exit 1
       
+   tests-1:
+    docker:
+      - image: cimg/base:current
+    steps:
+      - checkout
+      - run: exit 0
+      
 workflows:
   tests:
     jobs:
