@@ -6,7 +6,7 @@ jobs:
       - image: cimg/base:current
     steps:
       - checkout
-      - echo "hello"
+      - run: echo "hello"
       
 workflows:
   tests:
