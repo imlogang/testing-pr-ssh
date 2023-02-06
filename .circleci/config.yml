@@ -6,25 +6,10 @@ jobs:
       - image: cimg/base:current
     steps:
       - checkout
-      - run: exit 1
-      
-  tests-1:
-    docker:
-      - image: cimg/base:current
-    steps:
-      - checkout
-      - run: exit 0
-    
-  tests-1:
-    docker:
-      - image: cimg/base:current
-    steps:
-      - checkout
-      - run: exit 0
+      - run: echo "hello"
       
 workflows:
   tests:
     jobs:
       - tests
-      - tests-1
-      - tests-2
+
